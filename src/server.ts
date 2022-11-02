@@ -15,7 +15,3 @@ app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
 app.use(errors());
 
 app.listen(process.env.PORT || 3333);
-
-app.get('/', (req, res) => {
-    res.sendFile(`help.json`);
-})
