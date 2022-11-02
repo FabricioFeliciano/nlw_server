@@ -17,5 +17,5 @@ app.use(errors());
 app.listen(process.env.PORT || 3333);
 
 app.get('/', (req, res) => {
-    res.sendFile(`${__dirname}\\help.json`);
+    res.sendFile(`help.json`);
 })
